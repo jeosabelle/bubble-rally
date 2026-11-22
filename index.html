@@ -1,0 +1,70 @@
+Create a complete, playable HTML smartboard game called “Bubble Rally” for my junior high English teaching observation in Taiwan. The lesson reviews infinitives and gerunds from page 76. My co-teacher Christine and I will demonstrate the game together before students play.
+
+Give me the complete code in ONE index.html file with all HTML, CSS, and JavaScript included. It must work when I double-click the file and when I upload it to GitHub Pages. Use plain JavaScript and CSS so it works offline.
+
+DESIGN AND BUBBLE MOVEMENT
+
+Design for a widescreen classroom smartboard. Use two equally sized panels side by side. Team A is mint green on the left and Team B is purple on the right. Use large, dark text, short instructions, and glossy, easy-to-tap answer bubbles. Students at the back should be able to read the questions.
+
+I want the bubbles to visibly travel around the answer area. Give each bubble its own smooth path. Some should float slowly and others a little faster. Let them travel far enough that students can see them changing position. Keep the words upright and readable. Keep bubbles inside their team’s panel, separated from one another and away from the question. Include a “Pause bubbles” button that freezes movement while still allowing answers.
+
+Support two people tapping their own sides of the smartboard at the same time. Each physical tap must register only once.
+
+GAME FLOW
+
+1. Welcome screen
+Show the title, the two teams, and the scoring rule: “+2 for a completed question. −1 for each wrong tap.” A “Let’s Try!” button opens the teacher demo.
+
+2. Split-screen teacher demo
+The demo must use the SAME two-panel layout and moving bubbles as the student game. Label the left side “Teacher Jeosa · Team A” and the right side “Teacher Christine · Team B.” Give each teacher one sample question per level, so there are three demo rounds and six samples altogether.
+
+Use these samples:
+• Easy, Jeosa: “Which verb takes only V-ing? ___ watching movies.” Bubbles: want, enjoy, love. Answer: enjoy.
+• Easy, Christine: “Which verb takes only to + verb? ___ to walk home.” Bubbles: need, enjoy, like. Answer: need.
+• Moderate, Jeosa: “I love ___ at home.” Bubbles: cook, cooking, to cook. Accept both cooking and to cook.
+• Moderate, Christine: “I like ___ with friends.” Bubbles: walk, walking, to walk. Accept both walking and to walk.
+• Difficult, Jeosa: Scramble these pieces: We / want / to / learn / a new song.
+• Difficult, Christine: Scramble these pieces: We / enjoy / playing / board games.
+
+Let us answer in either order. When one teacher finishes, keep her completed answer visible while the other teacher continues. Once both finish, show a shared “Next demo” button. After the third demo, show “Start Team Game.” Demo taps do not affect scores. Both student teams start at 0.
+
+3. Team game
+Create 20 different questions per team, 40 in total. Use familiar A2 vocabulary about school, hobbies, friends, and future plans. Give both teams comparable difficulty and different questions. Keep demo questions separate. Each team progresses independently.
+
+EASY — Questions 1–8: Pick the first verb.
+Show a grammar pattern and a short example with a blank BEFORE the second verb. Students tap ONE verb that fits the specified pattern. The moving bubbles contain verbs such as enjoy, plan, or love.
+• “Which verb takes only V-ing? ___ reading comics.” Options: enjoy / want / love. Answer: enjoy.
+• “Which verb takes only to + verb? ___ to visit the zoo.” Options: finish / plan / like. Answer: plan.
+• “Which verb takes both forms? ___ dancing / ___ to dance.” Options: practice / need / love. Answer: love.
+Use these page 76 groups: want, need, plan, learn + to-infinitive; enjoy, keep, practice, finish + V-ing; like, love, begin, start + either form in suitable contexts. Make sure exactly one bubble fits each Easy clue.
+
+MODERATE — Questions 9–14: Pick the ending or endings.
+Now GIVE students the first verb in a sentence and ask them to choose what comes after it. The instruction is “Tap every ending that works.” Mix questions with one correct answer and questions with two. Do not reveal the number of correct answers beforehand.
+• “I enjoy ___ photos by the sea.” Options: take / taking / to take. Correct: taking.
+• “I like ___ under the trees.” Options: read / reading / to read. Correct: reading AND to read.
+For a two-answer item, accept either order. When the first correct bubble is tapped, pop it, display its word with a check mark, and keep the question open for the second answer.
+
+DIFFICULT — Questions 15–20: Build the sentence.
+Show scrambled moving bubbles containing words or short chunks. Students tap them in order. Put each correct piece into a stationary sentence strip so the class can watch the sentence grow. Include verb patterns, a gerund as the subject, and “It is + adjective + to + verb.”
+• Our class / plans / to / visit / the museum.
+• Learning / new words / is / fun.
+• It is / important / to / protect / our trees.
+Shuffle the displayed pieces and avoid sentences with multiple natural word orders. When a sentence is complete, leave it visible briefly so students can read it aloud.
+
+4. Scoring and level transitions
+Update the relevant team’s score immediately. Give +2 once per completed question, with a maximum of 40 points. Deduct 1 for every wrong tap and allow a retry. Preserve correct pieces or endings already selected. A selected bubble cannot score twice.
+
+After Question 8, replace that team’s question with “Easy complete! Next up: Moderate.” Show the new instruction and a “Start Moderate” button.
+After Question 14, show “Moderate complete! Next up: Difficult” and a “Start Difficult” button.
+The transition waits for a tap while the other team keeps playing. After Question 20, show “20 of 20 complete!” on that team’s side.
+
+5. Final scores and answer review
+When both teams finish, show both scores and announce the winner or a tie. The higher score wins. Include “Review answers” and “Play again.”
+
+In Review answers, give Team A and Team B separate tabs. For each team, show how many items were “Correct on the first try” and how many “Needed another try.” Include a “Missed items only” filter so we can quickly discuss mistakes with the class.
+
+For each missed item, show the question, what the team actually tapped, and the correct answer. For Moderate, show all accepted endings. For Difficult, show the point where the mistake happened, the next correct piece, and the complete sentence. Record mistakes during play so the review reflects the students’ actual taps.
+
+Before returning the code, check that both teachers can complete all three demos, each team has exactly 8 Easy + 6 Moderate + 6 Difficult items, two-answer questions work in either order, level transitions happen independently, and “Play again” resets scores and answer history.
+
+Return the full, ready-to-save index.html code in one code block. Include all questions and game logic, with no placeholders.
